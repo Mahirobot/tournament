@@ -25,9 +25,9 @@ def americano_matchmaking(players):
         last_player_b = group_b.pop(0)
         last_player_b1 = group_b.pop(0)
         group_a.insert(1, last_player_b)
-        group_a.insert(1, last_player_b1)
+        group_a.insert(1, last_player_a1)
         group_b.append(last_player_a)
-        group_b.append(last_player_a1)
+        group_b.append(last_player_b1)
     return matches
 
 
