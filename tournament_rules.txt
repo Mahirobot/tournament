@@ -1,8 +1,8 @@
 Americano:
-	1. Number of players is a multiple of 4. Otherwise tournament is deemed invalid.
-	2. Number of courts = total_players / 4. Ex: For 8 players we need 2 courts. Otherwise tournament is invalid.
+	1. Number of players is a multiple of 4. Only when the number of player reaches maximum(provided by the user), a schedule is made.
+	2. Number of courts specified during booking. Assigned to matches at random. Court can be changed if needed. Adding new court(including replacing an old court) reschedules matches.
 	3. Number of rounds = total_players - 1.
-	4. Number of matches per round = number of courts.
+	4. Number of matches per round = total players / 4.
 	5. A player is paired with another only once.
 	6. A player is paired against another at least once.
 	7. The teams and schedule are created at the beginning of the tournament.
@@ -11,22 +11,20 @@ Americano:
 
 Team Americano:
 	1. Players register as a team and the team is constant throughout the tournament as opposed to Americano.
-	2. Number of teams is a multiple of 4. Otherwise tournament is deemed invalid.
-	3. Number of courts = total_teams / 2. Ex: For 8 teams we need 4 courts. Otherwise tournament is invalid.
+	2. Number of teams is a multiple of 2. Only when the number of teams reaches maximum(provided by the user), a schedule is made.
+	3. Number of courts specified during booking. Assigned to matches at random. Court can be changed if needed. Adding new court(including replacing an old court) reschedules matches.
 	4. Number of rounds = total_teams - 1.
-	5. Number of matches per round = number of courts.
+	5. Number of matches per round = total players / 2.
 	6. A team is paired against another only once.
 	7. The schedule is created at the beginning of the tournament.
 	8. Score is updated manually. Score does not effect matchmaking.
 	9. Points are not awarded to individual players. After completing all matches, the team with the highest score wins.
 
-
-
 Mexicano:
-	1. Number of players is a multiple of 4. Otherwise tournament is deemed invalid.
-	2. Number of courts = total_players / 4. Ex: For 8 players we need 2 courts. Otherwise tournament is invalid.
+	1. Number of players is a multiple of 4. Only when the number of player reaches maximum(provided by the user), a schedule is made.
+	2. Number of courts specified during booking. Assigned to matches at random. Court can be changed if needed. Adding new court(including replacing an old court) reschedules matches.
 	3. Number of rounds = total_players - 1.
-	4. Number of matches per round = number of courts.
+	4. Number of matches per round = total players / 4.
 	5. A player can be paired with another more than once as opposed to Americano.
 	6. A player is paired against another more than once as opposed to Americano.	
 	7. Score is updated manually. Matchmaking depends on the cumulative scores of the previous rounds. So teams and schedule are created after every round.
@@ -41,20 +39,4 @@ Mexicano:
 	9. Each player of a team is awarded the same score after a match. After completing all matches, the player with the highest score wins.
 
 Team Mexicano:
-	1. Players register as a team and the team is constant throughout the tournament as opposed to Mexicano.
-	2. Number of teams is a multiple of 4. Otherwise tournament is deemed invalid.
-	3. Number of courts = total_teams / 2. Ex: For 8 teams we need 4 courts. Otherwise tournament is invalid.
-	4. Number of rounds = total_teams - 1.
-	5. Number of matches per round = number of courts.
-	6. A team is paired against another more than once as opposed to Americano.	
-	7. Score is updated manually. Matchmaking depends on the cumulative scores of the previous rounds. So schedule is created after every round.
-	8. Initial matchmaking is random. Further matches are created according to the score of the previous rounds. Ex: 
-		Team					Score		
-		Jack and John			30
-		Aubrey and Alex			10
-		Jane and Jude			40
-		Luke and Lesly			20
-		---------------------------------
-		Next Match: Jack and John vs Jane and Jude
-				Aubrey and Alex vs Luke and Lesly
-	9. Points are not awarded to individual players. After completing all matches, the team with the highest score wins.
+	Cancelled
